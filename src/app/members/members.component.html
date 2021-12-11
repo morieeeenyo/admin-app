@@ -3,9 +3,9 @@
 
 <h2>社員一覧</h2>
 <ul class="members">
-  <!-- forループ -->
-  <!-- click→clickイベント -->
-  <!-- クラスバインディング(条件式がtrueの場合のみ付与されるクラス) -->
+  <!-- *ngFor:forループ -->
+  <!-- (click)→clickイベント -->
+  <!-- [class.selected]="member === selectedMember"クラスバインディング(条件式がtrueの場合のみ付与されるクラス) -->
   <li
     *ngFor="let member of members"
     [class.selected]="member === selectedMember"
