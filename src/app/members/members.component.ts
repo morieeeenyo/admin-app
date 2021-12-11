@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Member } from '../member';
 
 @Component({
   selector: 'app-members',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MembersComponent implements OnInit {
 
-  member = '田中太郎'
+  // Member interfaceに従ってデータ構造を定義
+  member: Member = {
+    id: 1,
+    name: '田中太郎'
+  }
 
   constructor() { }
 
