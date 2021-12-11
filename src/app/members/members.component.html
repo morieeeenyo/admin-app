@@ -1,5 +1,14 @@
 <!-- ng generateしたときに自動で作成される
 <p>members works!</p> -->
+
+<h2>社員一覧</h2>
+<ul class="members">
+  <!-- forループ -->
+  <li *ngFor="let member of members">
+    <span class="badge">{{ member.id}}</span> {{member.name}}
+  </li>
+</ul>
+
 <h2>{{ member.name }}</h2>
 <div><span>id: </span>{{ member.id }}</div>
 <div>
