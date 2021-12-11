@@ -16,10 +16,16 @@ export class MembersComponent implements OnInit {
     name: '田中太郎'
   }
 
+  selectedMember: Member
+
   constructor() { }
 
   // コンポーネントが初期化されるときに実行
   ngOnInit(): void {
+  }
+
+  onSelect(member: Member): void {
+    this.selectedMember = member
   }
 
 }
