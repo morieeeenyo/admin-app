@@ -15,15 +15,5 @@
   </li>
 </ul>
 
-<!-- selectedMemberが存在する場合のみ表示 -->
-<div *ngIf="selectedMember">
-  <h2>{{ selectedMember.name }}</h2>
-  <div><span>id: </span>{{ selectedMember.id }}</div>
-  <div>
-    <label
-      >名前:
-      <!-- vue.jsでいうv-model的なバインディングをしてくれるやつ -->
-      <input type="text" [(ngModel)]="selectedMember.name" placeholder="名前" />
-    </label>
-  </div>
-</div>
+<!-- [member]→props -->
+<app-member-detail [member]="selectedMember"></app-member-detail>
